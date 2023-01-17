@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<head>
+    <title>Jah Caffie-Speed Resume</title>
+    <link rel="webpage icon" type= "jpg" href="profile-pic.jpg">
+    <link rel="stylesheet" href="resume.css">
+    <script src="resume.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body onload = "onLoad()">
+    <div class = "my-info">
+        <div class="personal-info">
+            <div class="image-div">
+                <img class="profile-pic" src="profile/profile-pic.jpeg" alt="">
+            </div>
+            <div class="name-div">
+                <p class="name">Jah Mael Caffie-Speed</p>
+            </div>
+            <div class="social-div">
+                <a target="_blank" href="https://github.com/JahCSpeed"><img class="social-img" src="socials/github.png" alt=""></a>
+                <a target="_blank" href="https://www.linkedin.com/in/jah-caffie-speed-b318a6234/"><img class="social-img" src="socials/linkedin.png" alt=""></a>
+            </div>
+        </div>      
+    </div>
+    <div class = "sections-div">
+        <h1 onclick="showContent()" class="headers" id= "Ed">Education</h1>
+        <h1 onclick="showContent()" class="headers" id = "Pj">Projects</h1>
+        <h1 onclick="showContent()" class="headers" id = "Wk">Work Experiece</h1>
+        <h1 class="headers">Skills</h1>
+    </div>
+    <div class="content-div" id = "education">
+        <div>
+            <img class = "rutgers-img" src="education/rutgers-logo.png" alt="">
+        </div>
+        <div class="text-div">
+            <span class="school-info">Rutgers University-New Brunswick, New Jersey</span> 
+            <span class="graduation-info"> Expected Graduation:  May 2023</span>
+            <span class="degree-info">Bachelor of Arts in Computer Science</span>
+            <span class="gpa-info">GPA: 3.0/4.0</span>
+        </div>
+    </div>
+    <div class="content-div" id = "work-experience">
+        <div class="sep-work">
+            <div>
+                <img class = "wrk-img" src="work exp/Signet_Jewelers_logo.png" alt="">
+            </div>
+            <div class="time-worked">
+                <span class="s-date">Start Date: May 2022</span>
+                <span class="role">Digital Product Intern</span>
+                <span class="e-date">End Date: August 2022</span>
+            </div>
+            <div class="list-div" display = "flex">
+                <ul>
+                    <li>I have participated and aware of all sorts of agile ceremonies (user story grooming, sprint planning, sprint retrospective)</li>
+                    <li>Learned how to groom user stories and make accurate estimates through story points. This includes breaking down larger epics into smaller user stories</li>
+                    <li>Communicate and educate new products and features to key stakeholders across Store Operations, Customer Care, and other parts of the business</li>
+                    <li>Support development cycle as new features and enhancements are coded, tested, and released into production</li>
+                    <li>Define scope/product requirements, write user stories and acceptance criteria, and accept user stories upon their completion in each sprint</li>
+                    <li>Collaborate with Analytics, Design, Research, and CX to create seamless experiences that solve true problems and meet core needs</li>
+                    <li>Think strategically and creatively to gather product and customer insights that help inform the strategy and roadmap</li>
+                    <li>Analyze current customer experiences to define friction points and opportunities</li>
+                
+                </ul>
+            </div>
+        </div>
+        <div class="sep-work">
+            <div>
+                <img class = "wrk-img" src="work exp/candlewood-logo.png" alt="">
+            </div>
+            <div class="time-worked">
+                <span class="s-date">Start Date: May 2017</span>
+                <span class="role">Lifeguard</span>
+                <span class="e-date">End Date: Present</span>
+            </div>
+            <div class="list-div">
+                <ul>
+                    <li>Ensured the safety of all pool patrons and documented incidents when necessary</li>
+                    <li>Established trusting and friendly rapport with residents and guests at the pool</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <div class="content-div" id = 'projects'>
+        <a style="text-decoration: none;" class="card card_schwifty" href="https://www.youtube.com/playlist?list=PLuylPbEces3IUBtf5F1d4nfS6RaH9MIZN"><div>
+                <div class="project title">
+                    <h1 class="title">Schwifty Client</h1>
+                </div>
+                <div class="image-div">
+                    <img class="project-pic" src="project images/project1.webp" alt="" id= "project-pic">
+                </div>
+                <div class="project-info">
+                    <div><span class="project-role">Designer/Lead Developer</span></div>
+                    <div><span class="project-dates">July 2020 - Auguest 2022</span></div>
+                </div>
+                <div class="project-desc">
+                    <div> 
+                        <h2 class="desc-header">Description:</h2>
+                    </div>
+                    <div>
+                        <p style="margin-bottom: 5px;" class="project-desc-text">
+                            Schwifty Client is a modded version of the popular video game Minecraft. 
+                        </p>
+                    </div>  
+                </div>
+                <div class="project-features">
+                    <div> 
+                        <h2 style="margin-top: 0px;" class="features-header">Features:</h2>
+                    </div>
+                    <div>
+                        <ul class="project-features-text">
+                            <li>Scripting: Record player movements and replay autonomous of human input</li>
+                            <li>Maptcha: Would solve captchas that would appear on maps ingame using
+                                Anti-Captcha Api </li>
+                            <li>Verification process that connected to a database of encrypted user IDs</li>
+                            <li>Multi-layer protection against reverse-engineering my code, breaking into the client, or attempting to bypass the verification process</li>
+                            <li>Custom installer that installed the client onto the user's computer. This would create all the necessary folders, install the client, 
+                                and generate a ID unique to the users computer</li>
+                            <li>Tracers: Draws a line to any nearby players</li>
+                            <li>Macro: Auto-send player made commands with a push of a button</li>
+                            <li>Armor Hud: Display users currently worn armor along with the damage to it</li>
+                            <li>Nuker: Destroy blocks that would be out of reach in the normal game</li>
+                            <li>Mob Aura: Autonomously attack designated enemys in the game</li>
+                        </ul>
+                    </div>  
+                </div>
+
+                <div style="display: flex; justify-content: right;">
+                    <img class="language-icon" src="programing languages/Java.png" alt="">
+                </div>
+        </div><a>
+        <a style="text-decoration: none;" class="card card_tomato" href="https://github.com/JahCSpeed/Tomato-Multiplayer-Game" target="_blank"><div>
+                <div class="project title">
+                    <h1 class="title">Tomato Game</h1>
+                </div>
+                <div class="image-div">
+                    <img class="project-pic" src="project images/tomato.png" alt="" id= "project-pic">
+                </div>
+                <div class="project-info">
+                    <div><span class="project-role">Designer/Lead Developer</span></div>
+                    <div><span class="project-dates">November 2021</span></div>
+                </div>
+                <div class="project-desc">
+                    <div> 
+                        <h2 class="desc-header">Description:</h2>
+                    </div>
+                    <div>
+                        <p style="margin-bottom: 5px;" class="project-desc-text">
+                            Players collaboratively complete the goal of collecting tomatoes 
+                        </p>
+                    </div>  
+                </div>
+                <div class="project-features">
+                    <div> 
+                        <h2 style="margin-top: 0px;" class="features-header">Features:</h2>
+                    </div>
+                    <div>
+                        <ul class="project-features-text">
+                            <li>Create a server that listens for connections on a particular port</li>
+                            <li>Connect a client to a server</li>
+                            <li>Client connection handled on a separate thread in the server</li>
+                            <li>Player movements are visible to all other connected clients in real time.</li>
+                            <li>Game state is shared by all players</li>
+                            <li>Supports up to 4 concurrent players</li>
+                            <li>Once a game is in progress, a new client that connects to it is informed of the
+                                current state</li>
+                        </ul>
+                    </div>  
+                </div>
+
+                <div style="display: flex; justify-content: right;">
+                    <img class="language-icon" src="programing languages/C.png" alt="">
+                </div>
+        </div></a>
+        <a style="text-decoration: none;" class="card card_shell" href="https://github.com/JahCSpeed/Shell-Simulator" target="_blank"><div>
+                <div class="project title">
+                    <h1 class="title">Shell</h1>
+                </div>
+                <div class="image-div">
+                    <img style="border-radius: 0px;" class="project-pic" src="project images/shell.png" alt="" id= "project-pic">
+                </div>
+                <div class="project-info">
+                    <div><span class="project-role">Designer/Lead Developer</span></div>
+                    <div><span class="project-dates">October 2021</span></div>
+                </div>
+                <div class="project-desc">
+                    <div> 
+                        <h2 class="desc-header">Description:</h2>
+                    </div>
+                    <div>
+                        <p style="margin-bottom: 5px;" class="project-desc-text">
+                            A command-line interface that allows users to interact with the operating system. It acts as an intermediary 
+                            between the user and the underlying operating system, allowing users to execute commands, run programs, and manage files and directories.
+                        </p>
+                    </div>  
+                </div>
+                <div class="project-features">
+                    <div> 
+                        <h2 style="margin-top: 0px;" class="features-header">Features:</h2>
+                    </div>
+                    <div>
+                        <ul class="project-features-text">
+                            <li>Execute other programs, possibly with command-line options, whether they’re
+                                specified with an absolute path or relative path</li>
+                            <li>If a command is given with no absolute/relative path (e.g., “ls”), and it’s not a built-in command
+                                the shell will look in /usr/bin and /bin and execute the first
+                                such program found</li>
+                            <li>If the command line ends in an ampersand, the shell will run the program in the background.
+                                Otherwise, it will run it in the foreground and wait for the executed program to complete before
+                                reading another line of input.</li>
+                            <li>Ctrl-c sends SIGINT to the foreground job and any of its child processes</li>
+                            <li>Ctrl-z should send SIGTSTP to the foreground job and any of its child processes</li>
+                            <li>
+                                Recognize these built-in commands:
+                                <ul style="list-style-type: disc;">
+                                    <li>bg &ltjobID&gt</li>
+                                    <li>cd [path]</li>
+                                    <li>exit</li>
+                                    <li>fg &ltjobID&gt</li>
+                                    <li>jobs</li>
+                                    <li>kill &ltjobID&gt</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+
+                <div style="display: flex; justify-content: right;">
+                    <img class="language-icon" src="programing languages/C.png" alt="">
+                </div>
+        </div></a>
+        <a style="text-decoration: none;" class="card card_clicker" href="https://github.com/JahCSpeed/AutoClicker" target="_blank"><div>
+                <div class="project title">
+                    <h1 class="title">Auto Clicker</h1>
+                </div>
+                <div class="image-div">
+                    <img style="border-radius: 0px;" class="project-pic" src="project images/autoclicker.webp" alt="" id= "project-pic">
+                </div>
+                <div class="project-info">
+                    <div><span class="project-role">Designer/Lead Developer</span></div>
+                    <div><span class="project-dates">December 2021</span></div>
+                </div>
+                <div class="project-desc">
+                    <div> 
+                        <h2 class="desc-header">Description:</h2>
+                    </div>
+                    <div>
+                        <p style="margin-bottom: 5px;" class="project-desc-text">
+                            Autonomsly left click or right click at a desired CPS(clicks per second)
+                        </p>
+                    </div>  
+                </div>
+                <div class="project-features">
+                    <div> 
+                        <h2 style="margin-top: 0px;" class="features-header">Features:</h2>
+                    </div>
+                    <div>
+                        <ul class="project-features-text">
+                            <li>Interactive GUI</li>
+                            <li>Slider to determine minimum cps</li>
+                            <li>Slider to determine maximum cps</li>
+                            <li>Swap bewtween left click and right click</li>  
+                            <li>Save a hot key to start and stop clicking</li>                      
+                        </ul>
+                    </div>  
+                </div>
+
+                <div style="display: flex; justify-content: right;">
+                    <img class="language-icon" src="programing languages/python.png" alt="">
+                </div>
+        </div></a>
+        <a style="text-decoration: none;" class="card card_scraper" href="https://github.com/JahCSpeed/Instock" target="_blank"><div>
+                <div class="project title">
+                    <h1 class="title">Web Scraper</h1>
+                </div>
+                <div class="image-div">
+                    <img style="border-radius: 0px;" class="project-pic" src="project images/web scraper.webp" alt="" id= "project-pic">
+                </div>
+                <div class="project-info">
+                    <div><span class="project-role">Designer/Lead Developer</span></div>
+                    <div><span class="project-dates">August 2020</span></div>
+                </div>
+                <div class="project-desc">
+                    <div> 
+                        <h2 class="desc-header">Description:</h2>
+                    </div>
+                    <div>
+                        <p style="margin-bottom: 5px;" class="project-desc-text">
+                            Scan through Walmart's public inventory of disinfectant wipes and sprays. It would then send an email to a specified 
+                            user with information regarding if the item is in stock or not, store location, and price.
+                        </p>
+                    </div>  
+                </div>
+                <div class="project-features">
+                    <div> 
+                        <h2 style="margin-top: 0px;" class="features-header">Features:</h2>
+                    </div>
+                    <div>
+                        <ul class="project-features-text">
+                            <li>Update the zipcode for the website</li>
+                            <li>Grab information on item such as stock, store location of stock and price</li>
+                            <li>Save information to a formated text document </li>
+                            <li>Send email to any recpient of choice with the text document attached</li>                        
+                        </ul>
+                    </div>  
+                </div>
+
+                <div style="display: flex; justify-content: right;">
+                    <img class="language-icon" src="programing languages/python.png" alt="">
+                </div>
+        </div></a>
+            
+    </div>
+
+    
+    
+</body>
+</html>

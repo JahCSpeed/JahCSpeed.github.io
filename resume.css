@@ -1,0 +1,338 @@
+
+:root {
+    --card_width: 650px;
+    --row_increment: 10px;
+    --card_border_radius: 16px;
+    --card_small: 60;
+    --card_medium: 66;
+    --card_large: 80;
+}
+body, html {
+    font-family: 'Playfair Display', serif;
+    color: #d8d8d8;
+}
+p,li,span,h2{
+    color: #d8d8d8;
+}
+
+ul{
+    list-style-type: circle;
+    text-align: left;
+}
+li{
+    padding-bottom: 3px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url('background pic/bg.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overscroll-behavior: none;
+}
+.my-info{
+    margin-top: 20px;
+}
+
+
+
+.image-div,
+.name-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.social-div{
+    margin: 0px;
+    display: inline-block;
+    text-align: center;
+    height: 10%;
+    width: 100%;
+}
+.social-img{
+    display: inline-block;
+    width: 30px;
+    margin-right: 10px;
+    transition: 300ms;
+    filter: invert(100%);
+}
+.social-img:hover {
+    transform: translateY(-3px);
+    background: white;
+    box-shadow: 0 0 100px white;
+    border-radius: 100%;
+ }
+.name{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.profile-pic{
+    width: 130px;
+    border-radius: 100px;
+    object-fit: cover;
+    height: 130px;
+    transition: 300ms;
+}
+.profile-pic:hover{
+    transform: scale(1.5);
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+}
+.image-div .profile-pic:hover{
+    margin-top: 60px;
+    margin-bottom: 60px;  
+}
+.project-pic{
+    width: 150px;
+}
+.sections-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width: 950px){
+    .sections-div{
+        flex-direction: column;
+    }
+}
+.headers{
+    font-size: 20px;
+    margin: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 550ms;
+    border-radius: 20px;
+    max-width: fit-content;
+    max-height: fit-content;
+    word-wrap:break-word;
+}
+.headers:hover{
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 11px -2px rgba(0,0,0,0.5);
+    background-color: #d8d8d8;
+    color: #272727;
+    border-radius: 20px;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.content-div{
+    border-color: black;
+    border-style:none;
+    box-shadow: 0px 15px 15px 15px rgba(0,0,0,0.5);
+    text-align: center;
+    display: none;
+    width: 50%;
+    margin-left: 24%;
+    margin-right: 25%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: 500ms;
+}
+.sep-work{
+    display: grid;
+    border-color: black;
+    border-style:dashed;
+    border-radius: 10px;
+    margin-left: 24%;
+    margin-right: 25%;
+    margin-top: 1100px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+
+}
+.rutgers-img,
+.wrk-img{
+    object-fit: contain;
+    height: 45%;
+    width: 45%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+}
+.education-info{
+    font-size: 40px;
+    display: block;
+}
+.school-info{
+    font-size: 25px;
+    text-align: left;
+    margin-left: 10px;
+}
+.graduation-info{
+    font-size: 25px;
+    text-align: right;
+    margin-right: 10px;
+}
+.text-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20%;
+    max-width: fit-content;
+    max-height: fit-content;
+    padding-bottom: 20px;
+}
+.list-div{
+    display: flex;
+    
+}
+.degree-info{
+    font-size: 25px;
+    text-align: left;
+    margin-left: 10px;
+}
+.gpa-info{
+    font-size: 25px;
+    text-align: right;
+    margin-right: 10px;
+}
+.experience{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.sep-work{
+    margin: 0;
+    margin-bottom: 10px;
+    box-shadow: 0px 8px 11px 5px rgba(0,0,0,0.5);
+    border: none;
+}
+.time-worked{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20%;
+    margin-bottom: 20px;
+    
+}
+.s-date{
+    text-align: left;
+    margin-left: 10px;
+}
+.role{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+.e-date{
+    text-align: right;
+    margin-right: 10px;
+}
+
+
+.link-to-project{
+    text-decoration: none;
+}
+
+.content-div#projects {
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, var(--card_width));
+    grid-auto-rows: var(--row_increment);
+    justify-content: center;
+    border-color: black;
+    border-style:none;
+    box-shadow: 0px 15px 15px 15px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    transform: translateX(-5px);
+    box-shadow: 0px 8px 11px 20px rgba(0,0,0,0.5);
+}
+.card {
+    box-shadow: 0px 8px 11px 5px rgba(0,0,0,0.5);
+    transition: 500ms;
+    padding: 15px;
+    margin: 15px 10px;
+    margin-right: 20px;
+    border-radius: var(--card_border_radius);
+    
+}
+.card_schwifty {
+    grid-row-end: span 90;
+}
+.card_tomato {
+    grid-row-end: span 70;
+}
+.card_shell {
+    grid-row-end: span 101;
+}
+.card_clicker{
+    grid-row-end: span 64;
+}
+.card_scraper{
+    grid-row-end: span 63;
+}
+
+.project-pic{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.project-title{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+.title{
+    text-decoration: underline;
+    text-align: center;
+    color: #d8d8d8;
+}
+.language-icon{
+    width:4%;
+    object-fit: contain;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+}
+.project-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.desc-header,.features-header{
+    text-align: left;
+    font-style: italic;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.project-desc-text,.project-features-text{
+    margin-top: 5px;
+    margin-left: 25px;
+    text-align: left;
+}
