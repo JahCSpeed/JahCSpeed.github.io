@@ -27,10 +27,11 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-image: url('background pic/bg.jpeg');
+    background-image: url('background pic/bg.jpeg') ;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
     background-attachment: fixed;
+    background-position: center;
     overscroll-behavior: none;
 }
 .my-info{
