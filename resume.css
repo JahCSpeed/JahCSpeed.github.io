@@ -30,7 +30,7 @@ body{
     background-image: url('background pic/bg.jpeg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: scroll;
     overscroll-behavior: none;
 }
 .my-info{
