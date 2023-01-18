@@ -149,6 +149,7 @@ body{
     padding: 25px;
     border-radius: 15px;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     transition: 500ms;
     min-width: fit-content;
 }
