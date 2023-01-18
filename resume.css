@@ -29,8 +29,10 @@ body{
     overflow-x: hidden;
     background-image: url('background pic/bg.jpeg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     overscroll-behavior: none;
 }
 .my-info{
