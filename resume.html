@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body onload = "onLoad()">
+<body onload="addInfo()">
     <div class = "my-info">
         <div class="personal-info">
             <div class="image-div">
@@ -24,21 +24,24 @@
         </div>      
     </div>
     <div class = "sections-div">
-        <h1 onclick="showContent()" class="headers" id= "Ed">Education</h1>
-        <h1 onclick="showContent()" class="headers" id = "Pj">Projects</h1>
-        <h1 onclick="showContent()" class="headers" id = "Wk">Work Experiece</h1>
-        <!--<h1 class="headers">Skills</h1>-->
+        <h1 onclick="showCard()" class="headers" id= "Ed">Education</h1>
+        <h1 onclick="showCard()" class="headers" id = "Pj">Projects</h1>
+        <h1 onclick="showCard()" class="headers" id = "Wk">Work Experiece</h1>
+        <h1 onclick="showCard()" class="headers" id = "Sk">Skills</h1>
     </div>
     <div class="content-div" id = "education">
-        <div>
-            <img class = "rutgers-img" src="education/rutgers-logo.png" alt="">
+        <div class="sep-work">
+            <div>
+                <img class = "rutgers-img" src="education/rutgers-logo.png" alt="">
+            </div>
+            <div class="text-div">
+                <span class="school-info">Rutgers University-New Brunswick, New Jersey</span> 
+                <span class="graduation-info"> Expected Graduation:  May 2023</span>
+                <span class="degree-info">Bachelor of Arts in Computer Science</span>
+                <span class="gpa-info">GPA: 3.0/4.0</span>
+            </div>
         </div>
-        <div class="text-div">
-            <span class="school-info">Rutgers University-New Brunswick, New Jersey</span> 
-            <span class="graduation-info"> Expected Graduation:  May 2023</span>
-            <span class="degree-info">Bachelor of Arts in Computer Science</span>
-            <span class="gpa-info">GPA: 3.0/4.0</span>
-        </div>
+
     </div>
     <div class="content-div" id = "work-experience">
         <div class="sep-work">
@@ -312,6 +315,20 @@
         </div></a>
             
     </div>
+    <div class="content-div" id="skills">
+        <h2 style="margin-top: 20px; margin-bottom:0px;">Soft Skills</h2>
+        <div class="snaps-inline" id = "nontec-skills">
+        </div>
+        <h2 style="margin-top: 20px; margin-bottom:0px;">Technical Skills</h2>
+        <div class="snaps-inline" id = "tec-skills">
+        </div>
+        <h2 style="margin-top: 20px; margin-bottom:0px;">Relevent Courses</h2>
+        <div class="snaps-inline" id = "course-skills">
+        </div>
+    </div>
+    
+    
+    
 
     
     

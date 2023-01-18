@@ -1,6 +1,6 @@
 
 :root {
-    --card_width: 650px;
+    --card_width: 500px;
     --row_increment: 10px;
     --card_border_radius: 16px;
     --card_small: 60;
@@ -30,6 +30,7 @@ body{
     background-image: url('background pic/bg.jpeg');
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     overscroll-behavior: none;
 }
 .my-info{
@@ -149,11 +150,12 @@ body{
     border-radius: 15px;
     backdrop-filter: blur(10px);
     transition: 500ms;
+    min-width: fit-content;
 }
 .sep-work{
     display: grid;
     border-color: black;
-    border-style:dashed;
+    border-style: dashed;
     border-radius: 10px;
     margin-left: 24%;
     margin-right: 25%;
@@ -162,7 +164,7 @@ body{
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 10px;
-
+    min-width: fit-content;
 }
 .rutgers-img,
 .wrk-img{
@@ -191,8 +193,6 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 20%;
-    max-width: fit-content;
-    max-height: fit-content;
     padding-bottom: 20px;
 }
 .list-div{
@@ -258,13 +258,14 @@ body{
     left: 50%;
     transform: translateX(-50%);
 
-    display: grid;
+    display: none;
     grid-template-columns: repeat(auto-fit, var(--card_width));
     grid-auto-rows: var(--row_increment);
     justify-content: center;
     border-color: black;
     border-style:none;
     box-shadow: 0px 15px 15px 15px rgba(0,0,0,0.5);
+    min-width: max-content;
 }
 
 .card:hover{
@@ -282,19 +283,19 @@ body{
     
 }
 .card_schwifty {
-    grid-row-end: span 90;
+    grid-row-end: span 105;
 }
 .card_tomato {
-    grid-row-end: span 70;
+    grid-row-end: span 78;
 }
 .card_shell {
-    grid-row-end: span 101;
+    grid-row-end: span 112;
 }
 .card_clicker{
-    grid-row-end: span 64;
+    grid-row-end: span 65;
 }
 .card_scraper{
-    grid-row-end: span 63;
+    grid-row-end: span 70;
 }
 
 .project-pic{
@@ -336,3 +337,62 @@ body{
     margin-left: 25px;
     text-align: left;
 }
+.snaps-inline{
+    display: grid;
+    gap: 30px;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+
+    padding: 25px 35px 35px;
+
+    overflow-x: scroll;
+    overscroll-behavior-inline: contain;
+    margin-top: 10px;
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 10px 1rem;
+}
+.content-div#skills{
+    margin-left: 14%;
+    margin-right: 15%;
+    width: 70%;
+    min-width: 0;
+}
+
+  
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
+.traits-element{
+    display: grid;
+    grid-template-rows: min-content;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 14px 10px rgba(0,0,0,0.5);
+    min-width: fit-content;
+  }
+  .traits-element > p{
+    text-align: center;
+    font-size: 20px;
+  }
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #d8d8d8;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    opacity: 0;
+
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #d8d8d8;;
+    border-radius: 10px;
+  }
