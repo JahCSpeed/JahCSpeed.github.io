@@ -84,6 +84,7 @@ body{
     object-fit: cover;
     height: 130px;
     transition: 300ms;
+    box-shadow: 3px 3px 100px white;
 }
 .profile-pic:hover{
     transform: scale(1.5);
@@ -288,19 +289,31 @@ body{
     
 }
 .card_schwifty {
-    grid-row-end: span 115;
+    grid-row-end: span 118;
 }
 .card_tomato {
-    grid-row-end: span 83;
+    grid-row-end: span 85;
 }
 .card_shell {
-    grid-row-end: span 127;
+    grid-row-end: span 130;
 }
 .card_clicker{
-    grid-row-end: span 70;
+    grid-row-end: span 87;
 }
 .card_scraper{
     grid-row-end: span 75;
+}
+.card_bankteller {
+    grid-row-end: span 83;
+}
+.card_cafe{
+    grid-row-end: span 134;
+}
+.card_cache{
+    grid-row-end: span 120;
+}
+.card_calc{
+    grid-row-end: span 102;
 }
 
 .project-pic{
