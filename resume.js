@@ -1,7 +1,7 @@
 let shownCard = null;
 const skills = ["Adaptability", "Attention to detail", "Communication", "Collaboration", "Continuous learning", "Creativity", "Critical thinking", "Emotional intelligence", "Flexibility", "Leadership", "Problem-solving", "Public speaking", "Self-motivation", "Time management"]
 const tecskills = ["Java","Python","JavaScript","CSS","HTML","C","Haskel","Data Structures and Algorithms","Databases: MySql","Testing and Debugging","Version Control","Web Development","Data Management"];
-const corses = ["IT Fundamentals","Internet Technology","Data Management for Data Sci","Principles of Programing Languages","Computer Architectur","Data Structures","Design and Analysis of Comp Algorithms","Software Methodology","Public Speaking","Discret Structures 1 & 2", "Calculus 1 & 2","Physics 1 & 2","Linear Algebra"];
+const corses = ["IT Fundamentals","Internet Technology","Data Management for Data Sci","Principles of Programing Languages","Computer Architecture","Data Structures","Design and Analysis of Comp Algorithms","Software Methodology","Public Speaking","Discret Structures 1 & 2", "Calculus 1 & 2","Physics 1 & 2","Linear Algebra"];
 function showCard(){
   targetCard = event.target.id;
   hideCard()
@@ -11,6 +11,7 @@ function showCard(){
       shownCard = card;
       hideCard(card);
       card.style.display = "inline-block";
+      transititon(card,1);
       return
     }
     hideCard(null);
@@ -22,6 +23,7 @@ function showCard(){
       shownCard = card;
       hideCard(card);
       card.style.display = "inline-block";
+      transititon(card,1);
       return
     }
     hideCard(null);
@@ -33,6 +35,7 @@ function showCard(){
       shownCard = card;
       hideCard(card);
       card.style.display = "grid";
+      transititon(card,1);
       return
     }
     hideCard(null);
@@ -44,6 +47,7 @@ function showCard(){
       shownCard = card;
       hideCard(card);
       card.style.display = "inline-block";
+      transititon(card,1);
       return
     }
     hideCard(null);
@@ -58,6 +62,14 @@ function hideCard(card){
           collection[i].style.display = "none";
         }
     }
+    
+  if(shownCard == null || card == null){
+    x = document.getElementsByClassName("about-website");
+    x[0].style.display = "inline-block";
+    transititon(x[0],1);
+  }else{
+    x[0].style.display = "none";
+  }
 }
 function addSkills(){
   const parent = document.getElementById("nontec-skills");
@@ -74,7 +86,7 @@ function addSkills(){
 }
 function addTecSkills(){
   const parent = document.getElementById("tec-skills");
-  tecskills.forEach((skill) => {
+  tecskills.sort().forEach((skill) => {
     const newDiv = document.createElement("div")
     const para = document.createElement("p");
     newDiv.className = "traits-element";
