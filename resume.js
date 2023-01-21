@@ -1,6 +1,6 @@
 let shownCard = null;
 const skills = ["Adaptability", "Attention to detail", "Communication", "Collaboration", "Continuous learning", "Creativity", "Critical thinking", "Emotional intelligence", "Flexibility", "Leadership", "Problem-solving", "Public speaking", "Self-motivation", "Time management"]
-const tecskills = ["Java","Python","JavaScript","CSS","HTML","C","Haskel","Data Structures and Algorithms","Databases: MySql","Testing and Debugging","Version Control","Web Development","Data Management","Agile Ceremonies & Structures"];
+const tecskills = ["JUnit Testing Framework","Java","Python","JavaScript","CSS","HTML","C","Haskel","Data Structures and Algorithms","Databases: MySql","Testing and Debugging","Version Control","Web Development","Data Management","Agile Ceremonies & Structures"];
 const corses = ["IT Fundamentals","Internet Technology","Data Management for Data Sci","Principles of Programing Languages","Computer Architecture","Data Structures","Design and Analysis of Comp Algorithms","Software Methodology","Public Speaking","Discret Structures 1 & 2", "Calculus 1 & 2","Physics 1 & 2","Linear Algebra"];
 function showCard(){
   targetCard = event.target.id;
