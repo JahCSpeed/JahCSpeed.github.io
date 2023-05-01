@@ -311,6 +311,9 @@ body{
 .card_clicker{
     grid-row-end: span 87;
 }
+.card_DNS{
+    grid-row-end: span 120;
+}
 .card_scraper{
     grid-row-end: span 75;
 }
