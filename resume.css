@@ -332,6 +332,9 @@ body{
 .card_website{
     grid-row-end: span 70;
 }
+.card_tlands{
+    grid-row-end: span 75;
+}
 
 .project-pic{
     margin-bottom: 20px;
